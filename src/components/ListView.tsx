@@ -7,9 +7,9 @@ interface Created {
 export const ListView: FunctionComponent<Created> = ({ items }) => {
   return (
     <div>
-      {items.map(({ name, price, color, img }, index) => (
+      {items.map((item, index) => (
         <div key={index} className="p-1">
-          <ShopItem name={name} price={price} color={color} img={img} />
+          <ShopItem item={item} />
         </div>
       ))}
     </div>

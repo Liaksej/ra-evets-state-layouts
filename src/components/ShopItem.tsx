@@ -1,16 +1,11 @@
 import { FunctionComponent } from "react";
 
 interface ShopItemProps {
-  name: string;
-  price: string;
-  color: string;
-  img: string;
+  item: { name: string; price: string; color: string; img: string };
 }
+
 export const ShopItem: FunctionComponent<ShopItemProps> = ({
-  name,
-  price,
-  color,
-  img,
+  item: { name, price, color, img },
 }) => {
   return (
     <>

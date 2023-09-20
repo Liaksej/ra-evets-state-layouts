@@ -1,16 +1,10 @@
 import { FunctionComponent } from "react";
 
 interface ShopCardProps {
-  name: string;
-  price: string;
-  color: string;
-  img: string;
+  card: { name: string; price: string; color: string; img: string };
 }
 export const ShopCard: FunctionComponent<ShopCardProps> = ({
-  name,
-  price,
-  color,
-  img,
+  card: { name, price, color, img },
 }) => {
   return (
     <>

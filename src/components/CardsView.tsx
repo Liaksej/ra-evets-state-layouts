@@ -7,9 +7,9 @@ interface Created {
 export const CardsView: FunctionComponent<Created> = ({ cards }) => {
   return (
     <div>
-      {cards.map(({ name, price, color, img }, index) => (
+      {cards.map((card, index) => (
         <div key={index} className="p-1">
-          <ShopCard name={name} price={price} color={color} img={img} />
+          <ShopCard card={card} />
         </div>
       ))}
     </div>
