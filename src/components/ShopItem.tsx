@@ -8,9 +8,9 @@ export const ShopItem: FunctionComponent<ShopItemProps> = ({
   item: { name, price, color, img },
 }) => {
   return (
-    <div className="w-full h-28 flex bg-gray-100 justify-between pr-3">
-      <img className="h-28" src={img} alt={"image"} />
-      <div className="self-center text-center text-3xl uppercase text-gray-800">
+    <div className="w-full h-24 flex bg-gray-100 justify-between pr-3 overflow-hidden">
+      <img className="h-32 mt-[-30px]" src={img} alt={"image"} />
+      <div className="self-center text-center text-3xl uppercase text-gray-800 ">
         {name}
       </div>
       <div className="self-center text-center text-gray-500">{color}</div>
