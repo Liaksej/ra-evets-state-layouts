@@ -2,7 +2,7 @@
 
 const nextConfig = {
   output: "export",
-  // basePath: "/ra-components-store-layouts",
+  basePath: "/ra-components-store-layouts",
 };
 
 module.exports = nextConfig;
