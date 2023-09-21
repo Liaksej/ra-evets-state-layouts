@@ -6,11 +6,9 @@ interface Created {
 }
 export const ListView: FunctionComponent<Created> = ({ items }) => {
   return (
-    <div>
+    <div className="w-full flex flex-col justify-between gap-1">
       {items.map((item, index) => (
-        <div key={index} className="p-1">
-          <ShopItem item={item} />
-        </div>
+        <ShopItem key={index} item={item} />
       ))}
     </div>
   );

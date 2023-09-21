@@ -6,11 +6,9 @@ interface Created {
 }
 export const CardsView: FunctionComponent<Created> = ({ cards }) => {
   return (
-    <div>
+    <div className="w-full grid grid-cols-3 justify-between gap-y-4">
       {cards.map((card, index) => (
-        <div key={index} className="p-1">
-          <ShopCard card={card} />
-        </div>
+        <ShopCard key={index} card={card} />
       ))}
     </div>
   );

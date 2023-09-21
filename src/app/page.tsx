@@ -10,8 +10,8 @@ export default function Store() {
   const [selected, setSelected] = useState("view_module");
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="mx-auto w-[48.5rem] flex flex-col">
+    <div className="bg-white min-h-screen font-sans">
+      <div className="w-11/12 flex flex-wrap mx-auto">
         <IconSwitch
           icon={selected}
           onSwitch={() => {
@@ -21,9 +21,9 @@ export default function Store() {
           }}
         />
         {selected === "view_module" ? (
-          <CardsView cards={products} />
-        ) : (
           <ListView items={products} />
+        ) : (
+          <CardsView cards={products} />
         )}
       </div>
     </div>
